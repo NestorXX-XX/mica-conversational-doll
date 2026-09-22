@@ -18,7 +18,7 @@ The project will progress in this order:
 Software → benchmarks → requirements → hardware decision → physical integration
 ```
 
-The MacBook Pro is the development platform for Sprints 1–3. Hardware will not be purchased until Sprint 4 benchmarks establish the compute, memory, audio, power, thermal, and storage requirements.
+The MacBook Pro is the development platform for the early software work. All hardware-related research, simulation, model benchmarking, constraint testing, candidate comparison, and selection must be completed before purchase. The selected hardware should be purchased by October 15 so it can be received and validated before physical integration.
 
 ## Initial requirements
 
@@ -81,12 +81,23 @@ Tasks:
 - Implement Piper text-to-speech with a standard voice.
 - Connect microphone → STT → LLM → TTS → speaker.
 - Measure STT, LLM time-to-first-token, generation, TTS, and total latency.
+- Create `MICA-SIM` with an ARM64 Linux environment and a 4 GB RAM constraint where practical.
+- Benchmark 1–1.5B, approximately 3B, and approximately 7B models.
+- Measure model loading, TTFT, tokens/second, total response time, RAM, and model size.
+- Compare compute, RAM, accelerator, storage, power, thermal, and audio requirements against all candidate boards.
+- Complete the hardware selection report and purchase the selected hardware by October 15.
 
 Acceptance criteria:
 
 - MICA can hear a spoken prompt and respond verbally.
 - Tests include Spanish, English, noise, and speaking-speed cases.
 - A reproducible latency benchmark is saved under `benchmarks/`.
+- All hardware simulations, benchmarks, comparisons, and selection analysis are complete before purchase.
+- Hardware has been selected and purchased by October 15.
+
+### Hardware procurement milestone — October 15
+
+By this date, the candidate hardware must have been tested through `MICA-SIM`, benchmarked, compared against the requirements, selected, and purchased. The project should then be waiting for delivery while Sprint 3 continues the software MVP.
 
 ### Sprint 3 — Memory and personality
 
@@ -112,23 +123,23 @@ Acceptance criteria:
 
 Prepare a concise demonstration and evidence package containing the objective, requirements, architecture, research, working software MVP, latency numbers, hardware candidates, problems encountered, and next steps.
 
-### Sprint 4 — Hardware simulation and selection
+### Sprint 4 — Hardware receipt and validation
 
 **Dates:** October 28–November 10  
-**Deliverable:** Hardware Selection Report
+**Deliverable:** Hardware Validation Report
 
 Tasks:
 
-- Create `MICA-SIM` with an ARM64 Linux environment and a 4 GB RAM constraint where practical.
-- Benchmark 1–1.5B, approximately 3B, and approximately 7B models.
-- Measure model loading, TTFT, tokens/second, total response time, RAM, and model size.
-- Compare compute, RAM, accelerator, storage, power, thermal, and audio requirements against candidate boards.
-- Select hardware only after reviewing the evidence.
+- Receive and inspect the selected hardware.
+- Reproduce the critical software benchmark on the delivered board where practical.
+- Validate the purchased board against the pre-purchase requirements and benchmark assumptions.
+- Measure physical temperature, power behavior, audio behavior, and actual resource usage.
+- Document any differences between the simulated requirements and the delivered hardware.
 
 Acceptance criteria:
 
-- The hardware decision includes requirements, measurements, cost, performance, power, physical constraints, and rationale.
-- The selected hardware is sufficient for the measured MVP requirements.
+- The hardware validation report confirms the pre-purchase requirements, measurements, cost, performance, power, physical constraints, and rationale.
+- The purchased hardware is sufficient for the measured MVP requirements, or a documented contingency is created.
 
 ### Sprint 5 — Physical MICA prototype
 
@@ -209,4 +220,3 @@ The decision log and benchmark history should explain why each major engineering
 - Personal runtime data and model files are ignored.
 - The package has a runnable placeholder entry point.
 - The first implementation tasks are ready to transfer into GitHub Issues/Projects.
-

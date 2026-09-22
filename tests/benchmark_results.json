@@ -1,0 +1,129 @@
+{
+  "model": "ggml-org/Qwen3-1.7B-GGUF:Q4_K_M",
+  "server": "http://localhost:8080/v1/chat/completions",
+  "temperature": 0.7,
+  "max_tokens": 60,
+  "thinking_enabled": false,
+  "results": [
+    {
+      "name": "Greeting",
+      "response": "¡Hola! Estoy aquí, ¿qué tal tú?",
+      "prompt_tokens": 63,
+      "completion_tokens": 13,
+      "total_tokens": 76,
+      "prompt_ms": 46.557,
+      "generation_ms": 167.274,
+      "prompt_tokens_per_second": 343.66475503146677,
+      "generation_tokens_per_second": 71.73858459772589,
+      "total_latency_ms": 237.79366700910032
+    },
+    {
+      "name": "Tiredness",
+      "response": "¿Qué te pasó que te sintiste cansado? ¿Algo específico?",
+      "prompt_tokens": 64,
+      "completion_tokens": 18,
+      "total_tokens": 82,
+      "prompt_ms": 40.574,
+      "generation_ms": 221.025,
+      "prompt_tokens_per_second": 492.92650465815547,
+      "generation_tokens_per_second": 76.91437620178714,
+      "total_latency_ms": 290.70991702610627
+    },
+    {
+      "name": "SimpleQuestion",
+      "response": "¿Qué te gustaría hacer? Te ayudaré.",
+      "prompt_tokens": 59,
+      "completion_tokens": 13,
+      "total_tokens": 72,
+      "prompt_ms": 43.792,
+      "generation_ms": 165.969,
+      "prompt_tokens_per_second": 342.5283156740957,
+      "generation_tokens_per_second": 72.30265893028216,
+      "total_latency_ms": 281.55216603772715
+    },
+    {
+      "name": "InterestingFact",
+      "response": "¡Oh, muy interesante! Los gatos son muy curiosos. Muchos de ellos tienen ojos grandes y brillantes, y se mueven con elegancia. También son muy amables y pueden ser muy divertidos cuando se diverten. ¿Te gustaría que cuente más",
+      "prompt_tokens": 65,
+      "completion_tokens": 60,
+      "total_tokens": 125,
+      "prompt_ms": 42.958,
+      "generation_ms": 655.857,
+      "prompt_tokens_per_second": 488.8495740025141,
+      "generation_tokens_per_second": 89.95863427545943,
+      "total_latency_ms": 741.5570419980213
+    },
+    {
+      "name": "MemoryCreation",
+      "response": "¡Qué bonita! Sofía le encanta pintar, ¡qué talento tiene! ¿Qué arte le gusta hacer?",
+      "prompt_tokens": 67,
+      "completion_tokens": 27,
+      "total_tokens": 94,
+      "prompt_ms": 31.266,
+      "generation_ms": 305.869,
+      "prompt_tokens_per_second": 127.93449753726092,
+      "generation_tokens_per_second": 85.0037107389111,
+      "total_latency_ms": 418.88891701819375
+    },
+    {
+      "name": "MemoryRecall",
+      "response": "Sofía le gusta pintar.",
+      "prompt_tokens": 100,
+      "completion_tokens": 9,
+      "total_tokens": 109,
+      "prompt_ms": 72.916,
+      "generation_ms": 93.451,
+      "prompt_tokens_per_second": 507.4332108179275,
+      "generation_tokens_per_second": 85.60636055258907,
+      "total_latency_ms": 193.88562499079853
+    },
+    {
+      "name": "PersonalConversation",
+      "response": "¡Qué bien! Escuchar música es un momento relajado y divertido. ¿Te gustaría que te lo comentara en un lugar tranquilo?",
+      "prompt_tokens": 66,
+      "completion_tokens": 33,
+      "total_tokens": 99,
+      "prompt_ms": 10.846,
+      "generation_ms": 328.333,
+      "prompt_tokens_per_second": 92.19988936013277,
+      "generation_tokens_per_second": 97.46202788023135,
+      "total_latency_ms": 393.00887496210635
+    },
+    {
+      "name": "Story",
+      "response": "¡Claro! Aquí va una historia corta y bonita:\n\nUn día, una flor se fue lejos del jardin. No sabía dónde estaba, pero siguió caminando hasta encontrar un lugar tranquilo. Allí, encontró una pequeña casa y decidió",
+      "prompt_tokens": 65,
+      "completion_tokens": 60,
+      "total_tokens": 125,
+      "prompt_ms": 10.863,
+      "generation_ms": 710.083,
+      "prompt_tokens_per_second": 92.05560158335635,
+      "generation_tokens_per_second": 83.08887834239096,
+      "total_latency_ms": 780.8626249898225
+    },
+    {
+      "name": "Joke",
+      "response": "¿Qué es más simple que un chiste? Una sonrisa. ¿Y tú?",
+      "prompt_tokens": 64,
+      "completion_tokens": 20,
+      "total_tokens": 84,
+      "prompt_ms": 75.96,
+      "generation_ms": 234.894,
+      "prompt_tokens_per_second": 210.63717746182203,
+      "generation_tokens_per_second": 80.88754927754646,
+      "total_latency_ms": 382.9064999590628
+    },
+    {
+      "name": "Companion",
+      "response": "¡Hola! ¿Cómo te sientes? Hoy también puedo ser una muñeca que te lleva a divertirse. ¿Qué te gustaría que hagamos?",
+      "prompt_tokens": 65,
+      "completion_tokens": 36,
+      "total_tokens": 101,
+      "prompt_ms": 49.54,
+      "generation_ms": 418.776,
+      "prompt_tokens_per_second": 423.8998788857489,
+      "generation_tokens_per_second": 83.57690029992168,
+      "total_latency_ms": 483.28987503191456
+    }
+  ]
+}
